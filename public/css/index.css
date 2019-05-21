@@ -1,0 +1,23 @@
+.banner-custom {
+  color: white;
+  background-color: #19588E;
+}
+
+.banner-text, .banner-text:hover{
+  color: white;
+  font-weight: 400;
+  font-size: 15pt;
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.main-banner-text, .main-banner-text:hover{
+  color: white;
+  font-weight: 500;
+  font-size: 20pt;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+}
