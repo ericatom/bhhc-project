@@ -1,0 +1,19 @@
+{
+  "name": "bhhcproject",
+  "version": "1.0.0",
+  "description": "Web Application Project For Berkshire Hathaway Homestate Companies Interview",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericatom/bhhc-project.git"
+  },
+  "author": "Erica Tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericatom/bhhc-project/issues"
+  },
+  "homepage": "https://github.com/ericatom/bhhc-project#readme"
+}
