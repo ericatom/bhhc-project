@@ -1,9 +1,12 @@
 .banner-custom {
   color: white;
   background-color: #19588E;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
-.banner-text, .banner-text:hover{
+.banner-text {
   color: white;
   font-weight: 400;
   font-size: 15pt;
@@ -11,13 +14,111 @@
   opacity: 0.95;
 }
 
-.main-banner-text, .main-banner-text:hover{
+.banner-text:hover {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.main-banner-text, .main-banner-text:hover {
   color: white;
   font-weight: 500;
   font-size: 20pt;
   text-decoration: none;
 }
 
-body {
+.head-custom {
+  text-align: center;
+  color: white;
+  background-image: url("../fonts/building.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.head-custom h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.technology, .purpose {
+  background-color: #7CC244;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  color: #0A4165;
+}
+
+.technology h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.technology h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tech-icon {
+  width: 8rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.location {
+  text-align: center;
+  color: white;
+  background-image: url("../fonts/sanfrancisco.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.location h1 {
+  font-size: 3rem;
+  padding-top: 80px;
+  text-align: right;
+}
+
+.location h4 {
+  text-align: right;
+}
+
+.purpose-text {
+  font-size: 1.5rem;
+}
+
+.padding-top {
+  padding-top: 3rem;
+}
+
+.loading {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: block;
   background-color: white;
+  padding-top: 25%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  height: 100%;
+  background-color: #7CC244;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
 }

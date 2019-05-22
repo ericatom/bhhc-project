@@ -11,4 +11,4 @@ Write an application that displays three or more reasons that you would like to 
 - HTML / CSS
 
 ### Credits
-Turtle Icons made by Freepik from www.flaticon.com 
+Icons made by Freepik from www.flaticon.com 

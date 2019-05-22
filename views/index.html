@@ -5,32 +5,108 @@
     <title>BHHC Project</title>
     <link rel="shortcut icon" href="fonts/turtleOutline.png">
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
 
-    <nav class="navbar navbar-expand-lg static-top banner-custom">
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#loader').remove();
+      });
+    </script>
+
+    <nav id="navbar" class="navbar sticky-top navbar-expand-lg banner-custom">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="fonts/turtle.png" width="50" height="50" alt="">
         </a>
-        <a class="nav-link main-banner-text" href="#">Why Work at BHHC?</a>
+        <a class="nav-link main-banner-text" href="#body">Why Work at BHHC?</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link banner-text" href="#">Technology</a>
+            <a class="nav-link banner-text js-scroll-trigger" href="#technology">Technology</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link banner-text" href="#">Location</a>
+            <a class="nav-link banner-text js-scroll-trigger" href="#location">Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link banner-text" href="#">Making a Difference</a>
+            <a class="nav-link banner-text js-scroll-trigger" href="#purpose">Making a Difference</a>
           </li>
         </ul>
       </div>
     </nav>
-  </head>
-  <body id="top-page">
+    <div id="loader" class="loading">
+      <img id="loading-image" src="fonts/turtle.png" width="50" height="50" alt="Loading..." />
+      <h1>Loading...</h1>
+    </div>
 
+  </head>
+  <body>
+    <header class="head-custom">
+      <div class="container">
+        <h1>Berkshire Hathaway Homestate Companies</h1>
+        <h2>Strength. Stability. What more does BHHC have to offer? Let's find out.</h2>
+      </div>
+    </header>
+    <section id="technology" class="technology">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 jumbotron">
+            <h1>Technology</h1>
+            <hr>
+            <h2>Our stack includes highly desirable tech and more!</h2>
+          </div>
+        </div>
+        <div class="row card-deck padding-top">
+          <div class="card">
+            <img class="card-img-top mx-auto tech-icon" src="fonts/net.png">
+            <div class="card-body">
+              <h2 class="card-title">.NET Framework</h2>
+              <p class="card-text">
+                .Net Framework is an open source platform used to build web, mobile, and desktop apps.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top mx-auto tech-icon" width="100" height="100" src="fonts/cloud.png">
+            <div class="card-body">
+              <h2 class="card-title">Cloud Services</h2>
+              <p class="card-text">
+                AWS and Azure. This high demand technology is paving the way for a new era of technology advancements.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top mx-auto tech-icon" width="100" height="100"src="fonts/hashtag.png">
+            <div class="card-body">
+              <h2 class="card-title">C# Language</h2>
+              <p class="card-text">
+                Object oriented language used to build .NET applications. Go-to language for Microsoft app development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="location" class="location">
+      <div class="container">
+        <h1>San Francisco is Cool</h1>
+        <h4>in style and in temperature</h4>
+      </div>
+    </section>
+    <section id="purpose" class="purpose">
+      <div class="container jumbotron">
+        <h1 class="display-4">How Can You Make a Difference?</h1>
+        <hr class="my-4">
+        <p class="purpose-text">
+          Much like how a turtle needs a shell for protection, a person needs insurance! <br>
+          At Berkshire Hathaway Homestate Companies, we provide quality insurance to people across the nation. <br>
+          <br>
+          <b>Join our team and develop high-quality insurance software that will be utilized by millions of people!</b>
+        </p>
+      </div>
+    </section>
     <!-- Bootstrap core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
