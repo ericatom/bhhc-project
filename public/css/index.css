@@ -20,6 +20,11 @@
   text-decoration: none;
 }
 
+.navbar li.active > a {
+  color: black;
+  background-color: yellow;
+}
+
 .main-banner-text, .main-banner-text:hover {
   color: white;
   font-weight: 500;
@@ -34,8 +39,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% auto;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
 }
 
 .head-custom h1 {
@@ -95,6 +100,13 @@
   font-size: 1.5rem;
 }
 
+.listings {
+  background-color: #19588E;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: white;
+}
+
 .padding-top {
   padding-top: 3rem;
 }
@@ -113,9 +125,15 @@
   display: none;
 }
 
+tr {
+  border-top: 2px solid #dee2e6;
+}
+
 body {
   height: 100%;
+  padding-top: 65px;
   background-color: #7CC244;
+  position: relative;
 }
 
 html {

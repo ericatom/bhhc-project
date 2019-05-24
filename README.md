@@ -9,6 +9,8 @@ Write an application that displays three or more reasons that you would like to 
 - Express
 - Bootstrap
 - HTML / CSS
+- JQuery
+- Cheerio 
 
 ### Credits
-Icons made by Freepik from www.flaticon.com 
+Icons made by Freepik from www.flaticon.com

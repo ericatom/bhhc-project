@@ -5,7 +5,6 @@
     <title>BHHC Project</title>
     <link rel="shortcut icon" href="fonts/turtleOutline.png">
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
 
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -15,6 +14,23 @@
       $(document).ready(function(){
         $('#loader').remove();
       });
+
+      $(function(){
+        $.getJSON('listings.json', function(data){
+          console.log(data);
+          $.each(data, function(i, listing){
+            var title = data[i].title;
+            var location = data[i].location;
+            var website = data[i].website;
+            var newRow = '<tr><td>' + title + '</td><td>' + location + '</td><td><a class="btn btn-success" role="button" href="'+ website + '">View</a></td></tr>';
+            $('tbody').append(newRow);
+          });
+        });
+      });
+      // $('body').scrollspy({
+      //   target: '#navbar',
+      //   offset: 75
+      // });
     </script>
 
     <nav id="navbar" class="navbar sticky-top navbar-expand-lg banner-custom">
@@ -73,7 +89,7 @@
             <div class="card-body">
               <h2 class="card-title">Cloud Services</h2>
               <p class="card-text">
-                AWS and Azure. This high demand technology is paving the way for a new era of technology advancements.
+                Public cloud platforms allow for quick development, high scalability, and low costs.
               </p>
             </div>
           </div>
@@ -82,7 +98,7 @@
             <div class="card-body">
               <h2 class="card-title">C# Language</h2>
               <p class="card-text">
-                Object oriented language used to build .NET applications. Go-to language for Microsoft app development.
+                Object oriented language used to build .NET applications. Go-to language for app development.
               </p>
             </div>
           </div>
@@ -107,6 +123,21 @@
         </p>
       </div>
     </section>
-    <!-- Bootstrap core JavaScript -->
+    <section id="jobListings" class="listings">
+      <div class="container">
+        <h1>Current Job Openings</h1>
+        <table class="table table-light">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Job Title</th>
+              <th scope="col">Location</th>
+              <th scope="col">Website</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </body>
 </html>
