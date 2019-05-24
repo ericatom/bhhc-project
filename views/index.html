@@ -3,26 +3,29 @@
 <html lang="en">
   <head>
     <title>BHHC Project</title>
-    <link rel="shortcut icon" href="fonts/turtleOutline.png">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
-
+    <link rel="shortcut icon" href="fonts/turtleOutline.png">
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
 
     <script type="text/javascript">
+      //when the webpage is done loading, remove the loading screen
       $(document).ready(function(){
         $('#loader').remove();
       });
 
+      //run this function to fill the job listings table with data from listings.json
       $(function(){
+        //retrieves the data from the JSON file
         $.getJSON('listings.json', function(data){
-          console.log(data);
+          //iterate through the data array and create a new row for each iteration (listing)
           $.each(data, function(i, listing){
             var title = data[i].title;
             var location = data[i].location;
             var website = data[i].website;
             var newRow = '<tr><td>' + title + '</td><td>' + location + '</td><td><a class="btn btn-success" role="button" href="'+ website + '">View</a></td></tr>';
+            //add the new row to the table body
             $('tbody').append(newRow);
           });
         });
