@@ -14,9 +14,11 @@ specific to engineering fields.
 1. Download the github repository on your local machine
 2. Install node JS https://nodejs.org/en/download/
 3. Install the following inside the repository:
+    ```
     npm install express
     npm install cheerio
     npm install request-promise
+    ```
 4. Run the following command within the repository:
     node app.js
 5. Go to `localhost:3000`
